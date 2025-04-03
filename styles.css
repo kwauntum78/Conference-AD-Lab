@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.details {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.submit-paper {
+    padding: 20px;
+}
+
+.submit-paper h2 {
+    color: #0073e6;
+}
+
+.qr-code {
+    text-align: center;
+    padding: 20px;
+}
+
+.qr-code img {
+    width: 150px;
+}
