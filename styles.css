@@ -1,50 +1,97 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
+    color: #333;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header {
     text-align: center;
-    padding: 20px;
     background-color: #0073e6;
     color: white;
+    padding: 20px;
     border-radius: 10px 10px 0 0;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
-.details {
+.details, .submit-paper, .qr-code {
     padding: 20px;
-    line-height: 1.6;
 }
 
 .submit-paper {
     padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .submit-paper h2 {
     color: #0073e6;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.submit-paper ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.submit-paper ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.submit-paper ul li::before {
+    content: "✔"; /* Add a checkmark icon */
+    color: #0073e6;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+}
+
+.submit-paper p {
+    text-align: center;
+}
+
+.submit-paper a {
+    color: #0073e6; /* Link color */
+    font-weight: bold; /* Make links bold */
+}
+
+.submit-paper a:hover {
+    text-decoration: underline;
 }
 
 .qr-code {
     text-align: center;
-    padding: 20px;
 }
 
 .qr-code img {
-    width: 150px;
+    width: 200px;
+}
+
+footer {
+   text-align: center;
+   margin-top: 20px;
+   padding-top: 10px;
+   border-top: 1px solid #ddd;
 }
